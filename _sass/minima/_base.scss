@@ -160,7 +160,7 @@ hr {
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
+  @include relative-font-size(0.9);
   border: 1px solid $grey-color-light;
   border-radius: 4px;
 }

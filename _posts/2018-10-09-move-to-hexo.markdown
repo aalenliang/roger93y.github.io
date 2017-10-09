@@ -52,7 +52,7 @@ deploy:
   message: move to hexo
 ```
 
-安装 `hexo-deployer-git`：
+安装 hexo-deployer-git：
 
 ```
 $ npm install hexo-deployer-git --save
