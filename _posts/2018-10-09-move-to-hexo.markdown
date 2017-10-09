@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "博客整体从 Jekyll 迁移到 HEXO"
+title:  "博客整体从 Jekyll 迁移到 Hexo，以及迁回 Jekyll"
 date:   2017-10-09 12:00 +0800
 author: 纪连
 categories: code
@@ -9,11 +9,13 @@ hidden: false
 ---
 
 
-电脑升级到了最新的 macOS High Sierra 之后，Jekyll 的本地环境彻底崩溃了，原因猜测是最新版本的 Jekyll 不能正确的识别依赖包的版本和位置，作为一个工具带来的便利几乎与麻烦一样多，我决定暂时放弃 Jekyll 并将整个网站迁移到 [Hexo]
+电脑升级到了最新的 macOS High Sierra 之后，Jekyll 的本地环境彻底崩溃了，原因猜测是最新版本的 Jekyll 不能正确的识别依赖包的版本和位置，作为一个工具带来的便利几乎与麻烦一样多，我决定暂时放弃 Jekyll 并将整个网站迁移到 [Hexo]。但在使用了一天后，我认为 [Hexo] 并没有比 Jekyll 更方便，所以迁回了 Jekyll，作为对 Jekyll 的补偿，我决定对主题进行扩展加入分类、归档等功能。
 
-> 补充：之前版本的Jekyll 的本地环境崩溃解决方法为删掉 Gemfile 和 GEmfile.lock
+本文作为 [Hexo] 部署的研究。
 
-* 安装
+> 补充：之前版本的 Jekyll 的本地环境崩溃解决方法为删掉 Gemfile 和 Gemfile.lock，这两个文件会导致无法正确判断依赖包的版本和位置。
+
+### 安装
 
 因为基于 Node.js 所以安装过程较 Jekyll 更简单，几分钟就能在本地搭建好一个博客环境了，引用官网的代码:
 
@@ -25,9 +27,9 @@ $ npm install
 $ hexo server
 ```
 
-> 考虑到国内网络不稳定等因素，这里推荐使用淘宝的 `cnpm` 作为 `npm` 的替代，如果是 macOS 操作系统建议在 npm 之前 加上 sudo。
+> 考虑到国内网络不稳定等因素，这里推荐使用淘宝的 `cnpm` 作为 `npm` 的替代，如果使用 macOS 操作系统，建议在 npm 之前 加上 sudo。
 
-* 部署
+### 部署
 
 [Hexo] 默认主题使用了 EJS 作为模板，这个是没有碰到过的，不过按照了解了几套模板的工作模式后，想来搞定不难，我决定先跳过主题这个步骤，先把它部署到 [GitHub] 上。
 
@@ -61,8 +63,19 @@ $ npm install hexo-deployer-git --save
 ```
 $ hexo deploy
 ```
+全部完成后，就能在自己的 GitHub Pages 看到部署好的博客了。
 
-* 迁移
+
+### 迁移
+
+从 Jekyll 迁移成本很低，包含两个步骤，一个是从原先 Jekyll 中 `_post` 文件下将所有文章复制到 `source/_post/`，第二就是修改配置文件，替换以下配置：
+```
+# Writing
+new_post_name: :year-:month-:day-:title.markdown
+```
+
+### 定制主题
+
 
 [Hexo]: https://hexo.io
 [GitHub]: https://github.com
