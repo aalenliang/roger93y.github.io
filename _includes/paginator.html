@@ -1,0 +1,14 @@
+<div class="pagination">
+  <ul>
+  {% if page.previous %}
+    <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}"><span class='large-screen'>&laquo; 上一篇: {{ page.previous.title }}</span><span class='small-screen'>&laquo; 上一篇</span></a></li>
+  {% else %}
+    <li class="prev disabled"><a>&laquo; 上一篇: 无</a></li>
+  {% endif %}
+  {% if page.next %}
+    <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}"><span class='large-screen'>下一篇: {{ page.next.title }} &raquo;</span><span class='small-screen'>下一篇 &raquo;</span></a></li>
+  {% else %}
+    <li class="next disabled"><a>下一篇: 无 &raquo;</a>
+  {% endif %}
+  </ul>
+</div>
