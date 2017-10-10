@@ -1,10 +1,7 @@
 ---
 layout: default
 ---
-
 <div class="home">
-
-  {{ content }}
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -12,6 +9,9 @@ layout: default
       <li>
         {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
+        {% for category in post.categories%}
+        <span class="post-cate" itemprop="category">{{ category }}</span>
+        {% endfor %}
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}

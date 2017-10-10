@@ -3,6 +3,12 @@
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title {% if page.header_active == "index" %}header-active{% endif %}" href="{{ "/" | relative_url }}">主页</a>
+    <a class="site-title {% if page.header_active == "archieve" %}header-active{% endif %}" href="{{ "/" | relative_url }}">归档</a>
+    <a class="site-title {% if page.header_active == "category" %}header-active{% endif %}" href="{{ "/" | relative_url }}">分类</a>
+    <a class="site-title {% if page.header_active == "about" %}header-active{% endif %}" href="{{ "/about" | relative_url }}">关于我</a>    
+    {% if page.date %}
+    <a class="site-title header-active animated fadeInDown" href="{{ "/about" | relative_url }}">文章页</a>   
+    {% endif %} 
   </div>
 </header>

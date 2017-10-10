@@ -2,6 +2,7 @@
 layout: page
 title: 关于我
 permalink: /about/
+header_active: about
 ---
 `纪`录与`连`接，代码与逻辑，都是美妙的东西。
 

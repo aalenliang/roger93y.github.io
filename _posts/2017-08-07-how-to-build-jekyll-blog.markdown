@@ -8,7 +8,7 @@ comments: true
 ---
 
 <style>
-img {
+.post-content p img {
     width: 70%;
     padding-left: 15%;
 }
