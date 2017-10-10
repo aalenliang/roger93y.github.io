@@ -71,7 +71,7 @@ $ jekyll serve
 ```
 浏览器中输入 http://localhost:4000 可以访问创建好的博客。
 
-![jekyll run]({{ site.url }}/assets/imgs/2017-08/jekyll run.png)
+![jekyll run]({{ site.url }}/assets/imgs/2017-08/jekyll run.png.jpg)
 
 #### 3. 配置 Jekyll 并定制自己的主题
 ---
@@ -129,7 +129,7 @@ google_analytics: UA-104170649-1
 ```
 具体效果如下：
 
-![jekyll static]({{ site.url }}/assets/imgs/2017-08/jekyll static.png)
+![jekyll static]({{ site.url }}/assets/imgs/2017-08/jekyll static.png.jpg)
 
 <br>
 
@@ -208,7 +208,7 @@ $ git push
  
 恭喜，现在你可以通过 [username].github.io 访问你的 Jekyll 博客了，谢谢你的阅读。
  
-![Jekyll finish]({{ site.url }}/assets/imgs/2017-08/jekyll finish.png)
+![Jekyll finish]({{ site.url }}/assets/imgs/2017-08/jekyll finish.png.jpg)
 
 
 [GitHub]: https://github.com

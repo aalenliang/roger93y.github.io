@@ -90,7 +90,7 @@ img {
 [% endblock footer %]
 ```
 试着渲染 `layout.html` 得到如下图的结果:
-![inherit1]({{ site.url }}/assets/imgs/2017-08/day1 p1.png)
+![inherit1]({{ site.url }}/assets/imgs/2017-08/day1 p1.png.jpg)
 
 Oops，似乎测试模块并未正确的加载到对应位置。
 
@@ -128,7 +128,7 @@ Oops，似乎测试模块并未正确的加载到对应位置。
 
 最终效果如下：
 
-![inherit2]({{ site.url }}/assets/imgs/2017-08/day1 p2.png)
+![inherit2]({{ site.url }}/assets/imgs/2017-08/day1 p2.png.jpg)
 #### 问题：SQLAlachemy MySQLdb 引擎
 
 ---
@@ -200,7 +200,7 @@ QLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:pasword@localhost/maibo'
 
 目前进展就到这里，框架雏形已经出来了，虽然界面模仿的不是很像，后期会针对性的对前端进行修改。
 
-![inherit2]({{ site.url }}/assets/imgs/2017-08/day2 p2.png)
+![inherit2]({{ site.url }}/assets/imgs/2017-08/day2 p2.png.jpg)
 
 
 
