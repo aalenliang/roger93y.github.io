@@ -340,7 +340,7 @@ kbd {
 .page-content {
   width: 100%;
   // background-color: #fafafa;
-  overflow-y: scroll;
+  overflow-y: hidden;
   float: none;
 }
 
@@ -348,7 +348,7 @@ kbd {
   .page-content {
     width: 60%;
     // background-color: #fafafa;
-    overflow-y: scroll;
+    overflow-y: hidden;
     float: right;
   }
 }
