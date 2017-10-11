@@ -12,8 +12,7 @@ layout: page
                 {% if group == null or group == node.group %}
                     <li class="category-li-item">
                         <span class="category-li-date">
-                        {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
-                        {{ tag.date | date: date_format }}
+                        {{ tag.date | date: site.date_format }}
                         </span>
                         <a class="category-link" href="{{ site.baseurl}}{{ tag.url }}">{{ tag.title }}</a>
                     </li>
