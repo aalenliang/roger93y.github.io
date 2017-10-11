@@ -16,7 +16,8 @@ layout: default
       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
       {% endif %}
       {% for category in page.categories%}
-      <span class="post-cate post-cate-shadow" itemprop="category">{{ category }}</span>
+      
+      <span class="post-cate post-cate-shadow" itemprop="category"><a class="post-cate-link" href="/category#{{ category | upcase }}">{{ category }}</a></span>
       {% endfor %}
     </p>
   </header>

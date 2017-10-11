@@ -6,7 +6,7 @@ author: jekyll
 categories: build
 comments: false
 ---
-> 本文为`jekyll`自动生成的示例文档，出于对开源的尊重，我保留了它，如果想了解更多，本文最后给出了一些有用文档的链接
+> 本文为`jekyll`自动生成的示例文档，尊重开源精神，我保留了它，如果想了解更多这个博客框架的内容，本文最后给出了一些有用文档的链接
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -15,8 +15,8 @@ function sideBarResizer() {
     }
     var sideBarLogo = document.querySelector('.logo-title');
     var sideBarImage = document.querySelector('.sidebar-image');
-    sideBarLogo.style.paddingTop = resizeByRatio(DEFAULTSIDEBARPADDING, getRatio)*100+'%';
     sideBarImage.style.width = resizeByRatio(DEFAULTSIDEBARIMAGE, getRatio)*1.2+'px';
+    sideBarLogo.style.paddingTop = resizeByRatio(DEFAULTSIDEBARPADDING, getRatio)*100+'%';
 }
 
 sideBarResizer();

@@ -3,7 +3,7 @@ layout: post
 title:  "模拟一个精简版微博 DAY 1"
 date:   2017-08-11 19:41 +0800
 author: 纪连
-categories: code maibo
+categories: maibo
 comments: true
 ---
 

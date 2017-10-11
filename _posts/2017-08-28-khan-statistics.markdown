@@ -3,7 +3,7 @@ layout: post
 title:  "《可汗学院公开课：统计学》的 Python 实现"
 date:   2017-08-28 12:00 +0800
 author: 纪连
-categories: code stats
+categories: stats
 comments: true
 hidden: false
 ---

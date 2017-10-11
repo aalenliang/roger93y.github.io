@@ -1,0 +1,25 @@
+---
+layout: page
+---
+
+<div class="category">
+{% assign sortedcategories = site.categories | sort %}
+{% for category in sortedcategories %}
+    <h2 class="category-title" id="{{ category[0] | upcase }}">{{ category[0] | upcase }}</h2>
+    <ul class="category-list">
+        {% for tag in category[1] %}
+            {% if tag.title != null %}
+                {% if group == null or group == node.group %}
+                    <li class="category-li-item">
+                        <span class="category-li-date">
+                        {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
+                        {{ tag.date | date: date_format }}
+                        </span>
+                        <a class="category-link" href="{{ site.baseurl}}{{ tag.url }}">{{ tag.title }}</a>
+                    </li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endfor %}
+</div>

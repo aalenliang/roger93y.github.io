@@ -3,7 +3,7 @@ layout: post
 title:  "Python 版 DES 加密算法实现"
 date:   2017-08-15 15:21 +0800
 author: 纪连
-categories: code cryptology
+categories: cryptology
 comments: true
 ---
 

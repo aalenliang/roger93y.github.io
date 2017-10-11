@@ -45,6 +45,7 @@
   padding-bottom: 13px;
   margin-right: 5%;
   font-size: $base-font-size / 1.1;
+  position: relative;
 
   &,
   &:visited {
@@ -52,10 +53,30 @@
   }
 
   &:hover {
-    color: #1756a9;
+    color: $grey-color-dark;
     transition: all 250ms ease-in-out;
     text-decoration: none;
-  }  
+  }
+
+  &:hover:before {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+.site-title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 3px;
+  background: $grey-color-dark;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scaleX(0) translate3d(0, 0, 0);
+  transform: scaleX(0) translate3d(0, 0, 0)
 }
 
 .header-active {
@@ -67,6 +88,10 @@
   float: right;
   font-weight: 400;
   margin-right: -1%;
+}
+
+.header-mobile:before {
+  display: none;
 }
 
 .header-mobile img {
@@ -363,6 +388,7 @@ kbd {
   font-size: $base-font-size / 1.2;
   color: $grey-color;
   letter-spacing: 2px;
+  margin-right: $spacing-unit / 15;
 }
 
 .post-cate {
@@ -377,15 +403,41 @@ kbd {
   border-radius: 3px;
   background-color: $grey-color-dark;
   color: $grey-color-light;
+  border-bottom: none;
   padding: 0 5px 0 5px;
 }
 
+.post-cate-link {
+  color:#e8e8e8;
+  
+  &:visited {
+    color:#e8e8e8;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.post-cate-index {
+  color: #828282;
+
+  &:visited {
+    color: #828282;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $title-color;
+  }
+}
 
 a.post-link {
   display: block;
   @include relative-font-size(1.2);
   text-decoration:none;
-  color: #4e4e4e;
+  color: $title-color;
   letter-spacing: 1px;
 }
 
@@ -533,3 +585,49 @@ a.post-link {
     display: inline;
   } 
 }
+
+/**
+ * Category start
+ */
+
+.category-title {
+  color: $title-color;
+  letter-spacing: 2px;
+}
+
+.archieve-title {
+  color: $title-color;
+  margin-left: -5%;
+  letter-spacing: 2px;
+}
+
+.category-li-date, .archieve-li-date {
+  color: $grey-color;
+  padding-right: 10px;
+}
+
+.archieve-li-item {
+  border-left: 1px solid #f2f2f2;
+  padding-left: 10px;
+  margin-left: -20px;
+}
+
+.category-list {
+  border-left: 1px solid #f2f2f2;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.category-list, .archieve-list {
+  list-style: none;
+}
+
+.category-li-item, .archieve-li-item {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+
+/**
+* Category end
+*/
