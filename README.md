@@ -12,7 +12,22 @@
 
 * 搭建简单：只需要克隆到本地，然后上传到自己的 GitHub Pages Repository，即可使用
 
-* 移动端适配：移动端无需任何调整
+## 使用方式
+
+搭建本地博客方法（以 macOS 为例）:
+```
+$ git clone https://github.com/rthel/rthel.github.io
+$ cd rthel.github.io
+$ sudo gem install jekyll
+$ jekyll serve
+```
+默认访问地址:
+
+```
+http://localhost:4000
+```
+
+用 Jekyll 和 GitHub 搭建个人博客的方法，可以阅读本博文 [如何用 GitHub Pages 和 Jekyll 搭建免费博客](http://lorem.top/code/2017/08/07/how-to-build-jekyll-blog.html)
 
 ## 未来的改进
 
