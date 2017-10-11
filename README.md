@@ -44,11 +44,7 @@ http://localhost:4000
 
 ## Licence
 
-<<<<<<< HEAD
-网站除文章外所有内容均基于 MIT license
-=======
 网站除文章外所有内容均基于 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
->>>>>>> 35602d27b8fb7e7f6c2a68844a7023d63953f58e
 
 [Jekyll]: https://jekyllrb.com/docs/home
 [Anatole]: https://github.com/hi-caicai/farbox-theme-Anatole
