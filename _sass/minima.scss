@@ -12,7 +12,7 @@ $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
 $post-text-color:  #3d3d3d !default;
-$background-color: #fdfdfd !default;
+$background-color: #fff !default;
 $brand-color:      #2a7ae2 !default;
 
 $grey-color:       #828282 !default;
@@ -24,7 +24,7 @@ $content-width:    900px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
-$on-bigscreen:     600px !default;
+$on-bigscreen:     1024px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {

@@ -69,11 +69,13 @@
 .header-mobile {
   display: inline;
   float: right;
-  font-weight: 600;
+  font-weight: 400;
+  margin-right: -1%;
 }
 
 .header-mobile img {
   height: 30px;
+  width: 30px;
 }
 
 @include adaptive-setting($on-bigscreen) {
@@ -301,7 +303,6 @@ kbd {
   position: absolute;
   width: 100%;
   padding-bottom: 20px;
-  background: #fff;
 
 }
 
@@ -510,20 +511,18 @@ a.post-link {
     cursor: default;
 }
 
-@include adaptive-setting($on-laptop) {
-  .large-screen{
-    display: none;
-  }
-  .small-screen{
-    display: inline;
-  }
+.large-screen{
+  display: inline;
+}
+.small-screen{
+  display: none;
 }
 
-@media all and (min-width: 800px) {
+@include media-query(1200px) {
   .large-screen{
-    display: inline;
+    display: none;
   }
   .small-screen{
-    display: none;
+    display: inline;
   } 
 }
