@@ -1,10 +1,10 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-想查看本站，请点击右侧的链接 [纪连的博客](http://lorem.top)
+访问本站，请点击链接 [纪连的博客](http://lorem.top)
 
 ## 简介
 
-网站基于 [Jekyll] 搭建，主题参考 [Anatole] 基于自己偏好进行了一定的定制，支持归档，分类，进行了简单的移动端适配，
+网站基于 [Jekyll] 搭建，主题参考 [Anatole] 基于自己偏好进行一定的重新设计，支持归档，分类等常用功能，并进行了一定程度的移动端适配，希望能够有个干净的写字空间，欢迎试用和提出建议。
 
 网站有如下优点：
 
@@ -21,13 +21,16 @@ $ cd rthel.github.io
 $ sudo gem install jekyll
 $ jekyll serve
 ```
-默认访问地址:
+本地博客默认访问地址:
 
 ```
 http://localhost:4000
 ```
 
-用 Jekyll 和 GitHub 搭建个人博客的方法，可以阅读本博文 [如何用 GitHub Pages 和 Jekyll 搭建免费博客](http://lorem.top/code/2017/08/07/how-to-build-jekyll-blog.html)
+使用请编辑文件夹根目录 `_config.yml`，将对应项目替换为自己的信息，然后重新 `$ jekyll serve`。
+
+
+关于用 Jekyll 和 GitHub 搭建个人博客的方法，可以阅读本博文 [如何用 GitHub Pages 和 Jekyll 搭建免费博客](http://lorem.top/code/2017/08/07/how-to-build-jekyll-blog.html)
 
 ## 未来的改进
 
