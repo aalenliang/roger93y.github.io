@@ -2,7 +2,7 @@
 
 ## 预览
 
-<a href='http://lorem.top'><img src="https://github.com/rthel/rthel.github.io/raw/master/preview.jpg" alt='preview' style="display:block;width: 60%; margin-left: 20%;"></a>
+<a href='http://lorem.top'><img width="1080" src="https://github.com/rthel/rthel.github.io/raw/master/preview.jpg" alt='preview'></a>
 
 访问本站，请点击链接 [纪连的博客](http://lorem.top)
 
