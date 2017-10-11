@@ -37,10 +37,6 @@
   transition: background-color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
 }
 
-.blur::after{
-  background-color: rgba(51, 51, 51, 0.1)
-}
-
 
 .site-title {
   font-weight: 300;
@@ -451,13 +447,24 @@ a.post-link {
       @include relative-font-size(1.125);
     }
   }
+
+  hr {
+    color:  $grey-color;
+    border-top: 1px grey;
+    border-bottom: 0;
+    border-style: solid;
+  }
+
+  .highlight {
+    margin-bottom: $spacing-unit / 2;
+  }
   
 }
 
 .pagination {
     height: 40px;
     font-size: 12px;
-    margin-bottom: 20px;
+    margin-bottom: $spacing-unit;
     border-bottom: 1px solid #f2f2f2;
     padding-bottom: 20px;
     padding-top: 20px;
