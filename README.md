@@ -1,7 +1,13 @@
+<style>
+img {
+  width: 60%;
+  margin-left: 20%;
+}
+</style>
+
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 ## 预览
-
 
 ![preview](https://github.com/rthel/rthel.github.io/raw/master/preview.jpg)
 
