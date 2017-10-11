@@ -1,6 +1,6 @@
 ## 预览
 
-<p align='center'><a href='http://lorem.top'><img width="500" src="https://github.com/rthel/rthel.github.io/raw/master/preview.jpg" alt='preview'></a></p>
+<p align='center'><a href='http://lorem.top'><img width="700" src="https://github.com/rthel/rthel.github.io/raw/master/preview.jpg" alt='preview'></a></p>
 
 访问本站，请点击链接 [纪连的博客](http://lorem.top)
 
