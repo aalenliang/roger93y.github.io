@@ -12,7 +12,7 @@ layout: default
         <span class="post-cate" itemprop="category"><a class="post-cate-index" href="/category#{{ category | upcase }}">{{ category }}</a></span>
         {% endfor %}
         <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">
+          <a class="post-list-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h2>
