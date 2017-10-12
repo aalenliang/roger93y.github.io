@@ -472,6 +472,11 @@ a.post-link {
 
   p {
     color: $post-text-color;
+    // letter-spacing: 0.05em;
+    line-height: 1.6em;
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.15);
+    }
   }
 
   h2 {
