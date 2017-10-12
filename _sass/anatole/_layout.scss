@@ -25,7 +25,6 @@
     border-top: 3px solid $grey-color-dark;
     border-bottom: 1px solid #f2f2f2;
     margin-top: 0;
-    // Positioning context for the mobile navigation icon
   }
  }
 
@@ -112,7 +111,7 @@ kbd {
   background-color: #333;
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);    
-  font-family: Menlo, Monaco, Consolas, "Courier New", SimHei, monospace;
+  font-family: Menlo, Monaco, Consolas, "Courier New", SimHei, "Microsoft YaHei", monospace;
 }
 
 .site-nav {
