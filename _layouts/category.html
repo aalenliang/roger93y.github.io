@@ -25,12 +25,11 @@ layout: page
 </div>
 <script>
 var SIDELOCATOR = document.querySelector('.side-locator');
-var WINDOWHASH = window.location.hash
 
 function getCategoeryList() {
     var hashList = document.querySelectorAll('.category-title');
     var hashArray = [];
-    var hashLetter = []
+    var hashLetter = [];
     hashList.forEach(function (hashObj) {
         var indexLetter = hashObj.id.slice(0,1);
         for (var i=0; i<hashLetter.length; i++){
@@ -61,6 +60,7 @@ function cateHashChangeHandler() {
     var taglist = document.querySelectorAll('.side-locator-item a')
     taglist.forEach(function (liObj) {
         liObj.style.color = "#828282"
+        liObj.style.fontWeight = '400'
     })
     var WINDOWHASH = window.location.hash
     if (!WINDOWHASH) {
@@ -68,6 +68,7 @@ function cateHashChangeHandler() {
     }
     var highligtitem = document.querySelector('a[href=\"' + WINDOWHASH + '\"]')
     highligtitem.style.color = "#2a7ae2"
+    highligtitem.style.fontWeight = '600'
 }
 
 cateHashChangeHandler()
