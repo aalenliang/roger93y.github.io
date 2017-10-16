@@ -446,6 +446,10 @@ a.post-list-link {
  * Category start
  */
 
+.category {
+  position: relative;
+}
+
 .category-title {
   color: $title-color;
   letter-spacing: 2px;
@@ -481,4 +485,33 @@ a.post-list-link {
 .category-li-item, .archieve-li-item {
   padding-bottom: 2px;
   padding-top: 2px;
+}
+
+/** SideLocator **/
+
+.side-locator {
+  position: fixed;
+  right: 0px;
+  top: 20%;
+  list-style: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 6px;
+  background-color: rgba(188, 188, 188, 0.2);
+}
+
+.side-locator-item {
+  text-align: center;
+  a {
+    color: $grey-color;
+  }
+
+  a:visited {
+    color: $grey-color;
+  }
+
+  a:hover {
+    color: $brand-color;
+    text-decoration: none;
+  }
 }

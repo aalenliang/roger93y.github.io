@@ -1,4 +1,5 @@
 var screenHeight = window.screen.height;
+
 function sideBarResizer() {
     'use strict';
     var viewPortHeight = 0;

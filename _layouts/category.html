@@ -21,4 +21,53 @@ layout: page
         {% endfor %}
     </ul>
 {% endfor %}
+{% include sidelocator.html %}
 </div>
+<script>
+var SIDELOCATOR = document.querySelector('.side-locator');
+var WINDOWHASH = window.location.hash
+
+function getCategoeryList() {
+    var hashList = document.querySelectorAll('.category-title');
+    var hashArray = [];
+    var hashLetter = []
+    hashList.forEach(function (hashObj) {
+        var indexLetter = hashObj.id.slice(0,1);
+        for (var i=0; i<hashLetter.length; i++){
+            if (hashLetter[i] == indexLetter) {
+                return;
+            }
+        }
+        hashLetter.push(hashObj.id.slice(0,1));
+        hashArray.push(createSideLocatorItem(hashObj.id));
+    });
+    return hashArray;
+}
+
+function createSideLocatorItem (hashTag) {
+    var listElm = document.createElement('li');
+    listElm.setAttribute('class', 'side-locator-item');
+    var linkElm = document.createElement('a');
+    linkElm.setAttribute('href', '#'+hashTag);
+    linkElm.textContent = hashTag.slice(0,1);
+    listElm.append(linkElm);
+    return listElm;
+}
+getCategoeryList().forEach(function (liObj) {
+    SIDELOCATOR.appendChild(liObj);
+});
+
+function cateHashChangeHandler() {
+    var taglist = document.querySelectorAll('.side-locator-item a')
+    taglist.forEach(function (liObj) {
+        liObj.style.color = "#828282"
+    })
+    var WINDOWHASH = window.location.hash
+    var highligtitem = document.querySelector('a[href=\"' + WINDOWHASH + '\"]')
+    highligtitem.style.color = "#2a7ae2"
+}
+
+cateHashChangeHandler()
+window.onhashchange = cateHashChangeHandler
+
+</script>
