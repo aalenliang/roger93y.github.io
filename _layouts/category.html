@@ -63,6 +63,9 @@ function cateHashChangeHandler() {
         liObj.style.color = "#828282"
     })
     var WINDOWHASH = window.location.hash
+    if (!WINDOWHASH) {
+        return false;
+    }
     var highligtitem = document.querySelector('a[href=\"' + WINDOWHASH + '\"]')
     highligtitem.style.color = "#2a7ae2"
 }
