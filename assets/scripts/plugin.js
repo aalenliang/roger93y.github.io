@@ -15,7 +15,6 @@ elementArray.forEach(function (item) {
 
 function calcPosition (evt) {
   viewPostion = window.scrollY / scrollRange * document.body.scrollHeight;
-  console.log(viewPostion);
   for (var i=0; i < heightGroup.length; i++) {
     if (viewPostion >= heightGroup[i]) {
       cateHashChangeHandler(hashGroup[i])
@@ -24,10 +23,6 @@ function calcPosition (evt) {
 }
 
 window.addEventListener('scroll', calcPosition);
-
-
-
-console.log(scrollRange, document.body.scrollHeight, window.innerHeight);
 
 function getCategoeryList() {
     var hashList = document.querySelectorAll('.category-title');
