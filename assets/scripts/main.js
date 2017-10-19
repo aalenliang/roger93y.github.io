@@ -1,8 +1,24 @@
-+function ($) {
-  function scrollPlugin() {
-    this.$element = $(document.body);
-    console.log(this.$element);
-  }
-  $.fn.scrollPlugin = scrollPlugin;
+var screenHeight = window.screen.height;
 
-}(jQuery);
+function sideBarResizer() {
+    'use strict';
+    var viewPortHeight = 0;
+    var DEFAULTSIDEBARPADDING = 0.4;
+    var DEFAULTSIDEBARIMAGE = 127;
+
+    function getRatio() {
+        viewPortHeight = window.innerHeight;
+        return viewPortHeight/screenHeight;
+    }
+
+    function resizeByRatio(original, ratio) {
+        return original * ratio();
+    }
+    var sideBarLogo = document.querySelector('.logo-title');
+    var sideBarImage = document.querySelector('.sidebar-image');
+    sideBarImage.style.width = resizeByRatio(DEFAULTSIDEBARIMAGE, getRatio)*1.2+'px';
+    sideBarLogo.style.paddingTop = 0.25*window.innerHeight + 'px';
+}
+
+sideBarResizer();
+window.onresize = sideBarResizer;
