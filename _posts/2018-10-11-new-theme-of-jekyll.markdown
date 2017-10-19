@@ -3,7 +3,7 @@ layout: post
 title:  "构建新的博客主题"
 date:   2017-10-11 12:00 +0800
 author: 纪连
-categories: code
+categories: design
 comments: true
 hidden: true
 ---

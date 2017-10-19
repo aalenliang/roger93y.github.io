@@ -3,7 +3,7 @@ layout: post
 title:  "如何用 GitHub Pages 和 Jekyll 搭建免费博客"
 date:   2017-08-08 00:21 +0800
 author: 纪连
-categories: code
+categories: build
 comments: true
 ---
 

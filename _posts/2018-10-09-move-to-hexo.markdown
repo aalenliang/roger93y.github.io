@@ -3,7 +3,7 @@ layout: post
 title:  "博客整体从 Jekyll 迁移到 Hexo，以及迁回 Jekyll"
 date:   2017-10-09 12:00 +0800
 author: 纪连
-categories: code
+categories: build
 comments: true
 hidden: false
 ---

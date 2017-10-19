@@ -3,7 +3,7 @@ layout: post
 title:  "前端课程学习笔记 - CSS 和 HTML"
 date:   2017-10-08 12:00 +0800
 author: 纪连
-categories: code
+categories: frontend
 comments: true
 hidden: false
 ---

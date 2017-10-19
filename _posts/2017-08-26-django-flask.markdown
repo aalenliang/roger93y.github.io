@@ -3,7 +3,7 @@ layout: post
 title:  "Django 和 Flask 框架对比（未完待续）"
 date:   2017-08-26 22:00 +0800
 author: 纪连
-categories: code
+categories: backend
 comments: true
 hidden: false
 ---
