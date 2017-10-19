@@ -13,7 +13,7 @@ elementArray.forEach(function (item) {
 });
 
 
-function calcPosition (evt) {
+function calcPosition () {
   viewPostion = window.scrollY / scrollRange * document.body.scrollHeight;
   for (var i=0; i < heightGroup.length; i++) {
     if (viewPostion >= heightGroup[i]) {
@@ -22,7 +22,7 @@ function calcPosition (evt) {
   }
 }
 
-window.addEventListener('scroll', calcPosition);
+window.addEventListener('scroll', calcPosition, true);
 
 function getCategoeryList() {
     var hashList = document.querySelectorAll('.category-title');
