@@ -21,4 +21,4 @@ function sideBarResizer() {
 }
 
 sideBarResizer();
-window.onresize = sideBarResizer;
+window.addEventListener('resize', sideBarResizer, true);
