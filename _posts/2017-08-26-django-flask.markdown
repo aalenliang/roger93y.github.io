@@ -5,7 +5,7 @@ date:   2017-08-26 22:00 +0800
 author: 纪连
 categories: backend
 comments: true
-hidden: false
+hidden: true
 ---
 本文是对 Flask 和 Django 的对比，也是第一次用 Django 开发项目的一些总结，尚未完结，还在不断补充之中。
 
