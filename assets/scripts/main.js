@@ -28,4 +28,6 @@ function throttle(method, context) {
     }, 100)
 }
 
-window.onresize = throttle(sideBarResizer);
+window.onresize = function () {
+    throttle(sideBarResizer);
+}
