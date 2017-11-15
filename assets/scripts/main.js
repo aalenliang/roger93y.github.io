@@ -21,4 +21,11 @@ function sideBarResizer() {
 }
 
 sideBarResizer();
-window.addEventListener('resize', sideBarResizer, true);
+function throttle(method, context) {
+    clearTimeout(method.tId);
+    method.tId = setTimeout(function () {
+        method.call(context);
+    }, 100)
+}
+
+window.onresize = throttle(sideBarResizer);
