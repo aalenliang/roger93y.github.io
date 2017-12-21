@@ -13,12 +13,14 @@ layout: page
         <h1 class="archieve-title">{{ post.date | date: '%Y' }}</h1>
         {% endif %}
     {% endunless %}
+    {% if post.hidden != true %}
     <li class="archieve-li-item">
         <span class="archieve-li-date">
         {{ post.date | date: site.date_format }}
         </span>
         <a class="archieve-link" href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a>
     </li>
+    {% endif %}
 {% endfor %}
 </ul>
 </div>

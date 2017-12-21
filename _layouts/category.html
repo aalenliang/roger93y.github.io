@@ -8,14 +8,14 @@ layout: page
     <div class="category-group">
     <h2 class="category-title" id="{{ category[0] | upcase }}">{{ category[0] | upcase }}</h2>
     <ul class="category-list">
-        {% for tag in category[1] %}
-            {% if tag.title != null %}
+        {% for post in category[1] %}
+            {% if post.title != null and post.hidden != true %}
                 {% if group == null or group == node.group %}
                     <li class="category-li-item">
                         <span class="category-li-date">
-                        {{ tag.date | date: site.date_format }}
+                        {{ post.date | date: site.date_format }}
                         </span>
-                        <a class="category-link" href="{{ site.baseurl}}{{ tag.url }}">{{ tag.title }}</a>
+                        <a class="category-link" href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a>
                     </li>
                 {% endif %}
             {% endif %}
