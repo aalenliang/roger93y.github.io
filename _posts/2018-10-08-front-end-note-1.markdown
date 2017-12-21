@@ -5,7 +5,7 @@ date:   2017-10-08 12:00 +0800
 author: 纪连
 categories: frontend
 comments: true
-hidden: false
+hidden: true
 ---
 
 本文包含CSS和HTML两个部分的内容，这两个部分是前端最表层的东西，初学觉得难度不大，但是了解的越多越感觉这两个最基础的东西反而是个很复杂，想要更高效简洁写出来有一定的难度，需要不断的练习形成一种模式化的编写方式。

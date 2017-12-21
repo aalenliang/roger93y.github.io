@@ -5,7 +5,7 @@ date:   2017-08-28 12:00 +0800
 author: 纪连
 categories: stats
 comments: true
-hidden: false
+hidden: true
 ---
 
 本文为[可汗学院公开课：统计学]课程中统计学概念的 Python 实现，尽可能用两种以上方式对其进行实现，其中包含了部分科学计算库 `Scipy` `numpy` `pandas`等的实现方式。
