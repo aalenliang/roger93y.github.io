@@ -10,14 +10,12 @@ layout: page
     <ul class="category-list">
         {% for post in category[1] %}
             {% if post.title != null and post.hidden != true %}
-                {% if group == null or group == node.group %}
-                    <li class="category-li-item">
-                        <span class="category-li-date">
-                        {{ post.date | date: site.date_format }}
-                        </span>
-                        <a class="category-link" href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                {% endif %}
+                <li class="category-li-item">
+                    <span class="category-li-date">
+                    {{ post.date | date: site.date_format }}
+                    </span>
+                    <a class="category-link" href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+                </li>
             {% endif %}
         {% endfor %}
     </ul>
