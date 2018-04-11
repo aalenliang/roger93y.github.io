@@ -515,3 +515,37 @@ a.post-list-link {
     text-decoration: none;
   }
 }
+
+.reading-mode {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  color: powderblue;
+  background: #fff;
+  box-shadow: 0px 1px 1px #888888;
+  font-size: 1em;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  background-image: url(/assets/full.svg);
+  background-size: 56%;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+@media (max-width:$on-bigscreen) {
+  .reading-mode{
+    display: none;
+  }
+}
+
+.reading-mode-full {
+  width: 100%;
+}
+
+.reading-mode-empty {
+  width: 0;
+  display: none;
+}
