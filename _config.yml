@@ -26,8 +26,8 @@ markdown: kramdown
 
 google_analytics: UA-104170649-1
 
-disqus:
-  shortname: ji-lian-de-zhu-ye
+# disqus:
+#   shortname: ji-lian-de-zhu-ye
 
 lang: zh-CN
 

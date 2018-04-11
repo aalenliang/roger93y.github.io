@@ -135,6 +135,9 @@ google_analytics: UA-104170649-1
 
 #### 5. 申请 Disqus Shortname， 启用文章评论功能
 ---
+
+> 2018年4月11日更新: 受国内特殊情况影响，Disqus 或者同类的开放式评论功能已经被墙或者连接不稳定，故这部分内容可能已经失效，请自行判断。
+
 [Disqus] 是 Jekyll minima 主题自带的一个插件，可以用几行代码实现文章的评论系统，这对于一个博客来而言是非常重要的功能，现在请到 [Disqus] 注册一个自己的账号。
 
 在`_config.yml`中添加刚申请到的 Disqus Shortname：
