@@ -47,6 +47,34 @@ https://tomcat.apache.org/download-taglibs.cgi
         └── MyApp.java
 ```
 
+### 在 Gradle 中加入 JSTL
+
+在 `build.grale` 中加入以下依赖
+```
+dependencies {
+    ...
+    compile 'org.apache.taglibs:taglibs-standard-spec:+'
+    compile 'org.apache.taglibs:taglibs-standard-impl:+'
+    ...
+}
+```
+
+### 在 Maven 中加入 JSTL
+
+在 `pom.xml` 加入以下依赖
+```
+<dependency>
+  <groupId>org.apache.taglibs</groupId>
+  <artifactId>taglibs-standard-spec</artifactId>
+  <version>1.2.5</version>
+</dependency>
+<dependency>
+  <groupId>org.apache.taglibs</groupId>
+  <artifactId>taglibs-standard-impl</artifactId>
+  <version>1.2.5</version>
+</dependency>
+```
+
 ### 在 JSP 中使用 JSTL
 这里只放一个核心 `<c:forEach>` 的简单示例，具体标签的使用请参考各类书籍或者官方文档 [JSR 52: A Standard Tag Library for JavaServer Pages](https://jcp.org/en/jsr/detail?id=52)。
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "域名迁移至GoDaddy，DNS 服务迁移至Cloudflare"
+title:  "域名迁移至 GoDaddy，DNS 迁移至Cloudflare，同时开启 HTTPS"
 date:   2018-04-10 23:03 +0800
 author: 纪连
 categories: build

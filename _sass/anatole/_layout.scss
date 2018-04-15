@@ -235,17 +235,21 @@ kbd {
     }
   }
 
-  > li:hover{
+  > lis:hover{
     background-color: rgb(239, 239, 239);
+  }
+
+  > li:hover {
+    box-shadow: #ccc 0px 0px 5px 0px;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease;
   }
 }
 
-a.post-list-link {
-  display: block;
-  @include relative-font-size(1.2);
-  text-decoration:none;
-  color: $title-color;
-  letter-spacing: 1px;
+.post-list-link:hover {
+  text-decoration: none;
 }
 
 .post-meta {
